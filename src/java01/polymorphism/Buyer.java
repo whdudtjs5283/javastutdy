@@ -26,18 +26,13 @@ public class Buyer {
 //    }
 
     // ↑ 추상화
-    void buy(Product product) {
-        money = money - product.price;
-        System.out.println(money);
-    }
-
-    void buyCart() {
-        for(Product product : this.cart.productList) {
-            this.buy(product);
-        }
-    }
+//    void buy(Product product) {
+//        money = money - product.price;
+//        System.out.println(money);
+//    }
 
     void setName(String name) {
+        System.out.println("buyer : " + name);
         this.name = name;
     }
 
