@@ -1,23 +1,20 @@
 package java01.polymorphism;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class Order {
 
-    Buyer buyer;
+    Member member;
 
     void refund(Product product) {
-        buyer.money = buyer.money + product.price;
+        member.money = member.money + product.price;
         System.out.println("----- refund -----");
         System.out.println("product : " + product.productName);
-        System.out.println("+" + product.price + " : " + buyer.money);
+        System.out.println("+" + product.price + " : " + member.money);
     }
 
     void bill() {
-        List<Product> productList = buyer.cart.productList;
+        List<Product> productList = member.cart.productList;
         int totalCount = 0;
         System.out.println("----- bill -----");
         for(Product product : productList) {
@@ -27,16 +24,16 @@ public class Order {
         System.out.println("total count : " + totalCount);
     }
 
-    void setBuyer(Buyer buyer) {
-        this.buyer = buyer;
+    void setBuyer(Member member) {
+        this.member = member;
     }
 
     void buy(Product product) {
-        buyer.money = buyer.money - product.price;
+        member.money = member.money - product.price;
     }
 
     void buyCart() {
-        for(Product product : buyer.cart.productList) {
+        for(Product product : member.cart.productList) {
             this.buy(product);
         }
     }
