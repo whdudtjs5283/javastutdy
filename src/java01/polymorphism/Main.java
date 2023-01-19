@@ -12,7 +12,10 @@ public class Main {
         member.login();  // 로그인
 
         Product product = new Product();
-        product.setProduct();   // 상품 세팅
+        product.setProduct();       // 상품 세팅
+        product.getProductList();   // 상품 조회
+
+        Cart cart = new Cart();
 
         // 장바구니
         // 상품1 추가

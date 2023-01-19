@@ -8,7 +8,6 @@ public class Member {
     int money = 1000;   // 소유금액
     String name;        // 이름
     String address;     // 주소
-    Cart cart;          // 장바구니
 
     static Scanner sc = new Scanner(System.in);
 
@@ -59,16 +58,5 @@ public class Member {
     void setName(String name) {
         System.out.println("buyer : " + name);
         this.name = name;
-    }
-
-    void setCart() {
-        if(Objects.isNull(cart)) {
-            Cart cart = new Cart();
-            this.cart = cart;
-        }
-    }
-
-    Cart getCart() {
-        return this.cart;
     }
 }
