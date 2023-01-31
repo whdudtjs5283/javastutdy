@@ -1,0 +1,75 @@
+java 메모리 구조
+   - code : 실행할 프로그램 코드
+   - data : 전역/정적 변수
+   - heap : 동적할당 메모리(Runtime, new) -> tools(일반적으로 was)
+   - stack : 컴파일시 결정
+      - code, data : method
+
+   - 메모리주소기반 : 메모리 주소에 기록되어 찾을 수 있음
+
+변수타입
+   - 기본 : java 기본 byte : 4byte
+   - 2byte char를 입력해도 java 기본이 4byte라 4byte를 차지함
+      - 1byte : boolean, byte
+      - 2byte : char, short
+      - 4byte : int, float
+      - 8byte : long, double
+      
+   - 오토박싱(Auto Boxing) : java 자동 형변환
+      - char     -> String
+      - int       -> Integer
+      - double  -> Double
+      - float     -> Float
+
+   - 참조형 : 기본타입 제외 전체
+      - 객체(Object), 배열(Array), 함수(Function), 날짜(Date), 정규표현식(RegExp), Map, WeakMap, Set, WeakSet 상속 전체
+      - 메모리 주소
+
+
+메소드 시그니쳐 : 메소드명, 매개변수
+   접근제어자   리턴타입   메소드명   매개변수
+   public         String      getName  (String str) {} 
+
+   public      : 전체
+   protected : 같은 패키지, 상속
+   default     : 같은 패키지
+   private     : 나
+
+
+변수 초기화 방법
+   1. 초기화 블럭    : static { 변수 초기화 블럭 }
+   2. 생성자          : public A() { 생성자 }
+   3. 명시적 초기화 : int a= 0;
+
+변수 초기화 순서
+   - 클래스 변수 : 첫 로딩 시 한 번
+      - 기본값 -> 명시적 초기화 -> 초기화 블럭 
+   - 인스턴스 변수 : 인스턴스 생성 시 마다 : new A()
+      - 기본값 -> 명시적 초기화 -> 인스턴스 초기화 블럭 -> 생성자
+
+
+상속/추상화 : 다형성
+   - 상속 : 같은 걸 전달해줌 ( extends )
+      - 조상 : Object
+         - hashCode : 메모리주소 해싱 값 비교 : A == B 
+            - String은 예외 : "a" == "a" : true
+               * String의 경우 모든 문자열이 생성될 때 마다 저장하기에 한계가 있어 예외
+         - equals     : 값 비교 : A.equals(B)
+   - 구현 : 다른걸 전달해줌  ( interface, abstract )
+   - class는 다중 상속 x
+      - class 끼리 다중 상속 할 경우 부모의 부모(할아버지)가 같으면 어떤 부모를 참조하는지 모르기 때문에 오류 발생 
+      - 자식의 자식끼리 extends 받는 걸 다중 상속이라고 하지 않음
+      - interface는 기능 구현만 하기 때문에 다중 상속 가능 
+   
+오버로드/오버라이딩
+   - 오버로드 : 같은 class 내 같은 이름 메소드 : 이름(매개변수)
+   - 오버라이딩 : 조상 > 부모 > 자식 
+
+
+형변환 Cast
+   - 자식 -> 부모 : 업 캐스팅
+      - 자동형변환
+         - e.g. List -> ArrayList
+   - 부모 -> 자식 : 다운 캐스팅 : 조상타입을 자식타입으로 원복
+      - 수동형변환
+         - e.g. ArrayList -> List : (ArrayList) List

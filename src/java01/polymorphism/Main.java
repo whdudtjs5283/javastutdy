@@ -13,9 +13,13 @@ public class Main {
 
         Product product = new Product();
         product.setProduct();       // 상품 세팅
-        product.getProductList();   // 상품 조회
+
+        List<Product> productList = new ArrayList<>();
+        productList = product.getProductList();   // 상품 조회
 
         Cart cart = new Cart();
+        cart.setCart(productList);
+
 
         // 장바구니
         // 상품1 추가

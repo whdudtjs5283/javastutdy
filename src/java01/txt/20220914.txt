@@ -1,0 +1,21 @@
+MYSQL
+   WITH RECURSIVE CTE AS ( 쿼리 )
+      - WITH : 시작절
+      - RECURSIVE : MYSQL 전용 함수
+       - CTE : 재귀 쿼리 공용 명칭
+
+
+
+- form 내 input 데이터 가져오기
+   - $("#form").serialize();
+      - input 데이터를 직렬화하여 String화 함
+      - contentType: "application/json; charset=utf-8" 사용 불가
+      - application/text 사용 필요
+
+   - $("#form").serializeArray();
+      - 각 input 데이터를 json Array 형태로 만듬
+      - key, value를 추출하여 json 형식으로 변경하면 contentType: "application/json; charset=utf-8" 사용 가능
+         * for (var i = 0; i < formArray.length; i++) {
+              returnArray[formArray[i]['name']] = formArray[i]['value'];
+           }
+

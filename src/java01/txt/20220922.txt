@@ -1,0 +1,6 @@
+JPA queryDsl
+   - gradle setting
+      - https://kha0213.github.io/jpa/querydsl-quick-start/
+   - 참고 : https://velog.io/@youngerjesus/%EC%9A%B0%EC%95%84%ED%95%9C-%ED%98%95%EC%A0%9C%EB%93%A4%EC%9D%98-Querydsl-%ED%99%9C%EC%9A%A9%EB%B2%95
+   https://jojoldu.tistory.com/372
+      - Gradle 5.0 이상 & IntelliJ 2020.x 사용시

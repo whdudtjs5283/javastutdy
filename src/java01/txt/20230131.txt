@@ -1,0 +1,50 @@
+Enum
+   - 열거형
+   - 싱글톤
+   -  Enum이 최상위 조상
+
+java 어노테이션
+   - @Override	  : 오버로딩, 오버라이딩
+   - @Deprecated	  : 앞으로 지원 안할 예정
+   - @Documented  : java doc
+   - @Target	  : 범위
+      - Target: 해당 어노테이션이 사용되는 위치를 결정함
+      - ElementType.PACKAGE : 패키지 선언시
+      - ElementType.TYPE : 타입 선언시
+      - ElementType.CONSTRUCTOR : 생성자 선언시
+      - ElementType.FIELD : 맴버 변수 선언시
+      - ElementType.METHOD : 메소드 선언시
+      - ElementType.ANNOTATION_TYPE : 어노테이션 타입 선언시
+      - ElementType.LOCAL_VARIABLE : 지역 변수 선언시
+      - ElementType.TYPE_PARAMETER : 매개 변수 타입 선언시
+   - @Retention	  : Target과 같이 사용됨. 적용 범위 (소스/런타임)
+      - Retention: 해당 어노테이션의 정보를 어느 범위까지 유지할 것인지를 설정함
+      - RetentionPolicy.SOURCE: 컴파일 전까지만 유효하며 컴파일 이후에는 사라짐
+      - RetentionPolicy.CLASS: 컴파일러가 클래스를 참조할 때까지 유효함
+      - RetentionPolicy.RUNTIME: Reflection을 사용하여 컴파일 이후에도 JVM에 의해 계속 참조가 가능함
+   - @Native	  : java native 사용할 때 사용
+   - @Runnable
+   - @FunctionalInterface : 함수형 선언
+
+메타 어노테이션
+   - 어노테이션의 매개변수
+   - @Retention, @Documneted, @Target, @Inherited, @Repeatable 등이 존재
+      - Inherited: 해당 어노테이션을 하위 클래스에 적용함
+      - Repeatable: Java8부터 지원하며, 연속적으로 어노테이션을 선언하는 것을 허용함
+   - e.g. @Target({여기 영역})
+
+Rx java -> Reactor -> Spring 5 -> webflux > mono, flux
+
+스레드
+   - 프로세스(공장) > 스레드(일꾼)
+      - 단일 스레드 : 일꾼 1명
+      - 멀티 스레드 : 일꾼 여러명
+   - CPU/MEM : 자원사용률 up
+   - 톰캣
+
+Sync : 동기
+   - 시작하면 종료까지 간섭 못함 : blocking
+   - task 종료 후 다음 task
+
+Async : 비동기
+   - task 중 다른 일 처리 가능 : non-blocking

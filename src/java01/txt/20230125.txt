@@ -1,0 +1,9 @@
+Exception
+
+Throwable - ERROR / Exception
+
+
+ERROR : 박살
+
+Exception
+   - RuntimeException :  default 롤백

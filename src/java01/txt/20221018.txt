@@ -1,0 +1,21 @@
+# validation
+
+- ajax return map : key / value 구조
+   - 장점 : 모든 속성 커버 가능
+   - 단점 : 어떤 값이 들어있는지 모름(필수값 여부 확인 어려움)
+
+- ReponseVO/DTO
+   - 장점 : 어떤 값이 들어있는지 확인 가능
+
+- validation 시 if문 안에서 사용x
+   - debug 안됨
+   - true/false로 체크 시 boolean 생성 후 사용
+
+- controller 에서도 사용하나 service 영역 추천
+   - 서비스에서도 사용할 수도 있음
+
+- VO @Valid 
+   - controller 진입 전 vo에서 걸림
+
+- @Transactinal
+   - controller에서 적용 시 하위 로직에도 다 적용됨으로 서비스에서 사용

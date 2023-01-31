@@ -2,7 +2,9 @@ package java01.polymorphism;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class Product {
    int price;
@@ -31,12 +33,17 @@ public class Product {
       return chooseProductList;
    }
 
-   void getProductList() {
+   List<Product> getProductList() {
+
+      if (Objects.isNull(productList)) {
+//         return ;
+      }
       System.out.println("----- product list -----");
       for (int i = 0; i < productList.size(); i++) {
          System.out.println((i+1) + " : " + productList.get(i).productName + ", " + productList.get(i).price + "$");
       }
       System.out.println("");
+      return productList;
    }
 
    void setProduct() {

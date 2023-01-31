@@ -1,0 +1,17 @@
+DB
+
+- NOW(), SYSDATE, CURRENTDATE 등 조금씩 다르니 유의해서 사용
+   - NOW      : 쿼리 시작 시 고정 시간(쿼리 시작시간)
+   - SYSDATE  : 함수 호출 시 마다 시간이 변함(쿼리 종료시간)
+
+
+HTTP 구조
+http는 statusless 상태 : 요청, 응답 시 리소스를 잡아먹지 않기 위해
+
+request
+   1. start-line
+      - GET) /uri HTTP 1.1 
+   2. header
+      - 호출에 필요한 필수 데이터
+   3. body
+      - 데이터

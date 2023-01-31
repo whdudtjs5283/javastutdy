@@ -1,0 +1,11 @@
+Collection
+
+Stream
+   - java 8 부터 지원
+   - 재사용 불가
+   - filter 등 반복문에 조건이 필요할 때 사용
+      - 단순 조회면 향상된 for문이 더 나음
+
+   - list : 순서 있음, 데이터 중복 허용
+   - set : 순서 없음, 중복x
+   - map : key/value 구조, 순서x, 키중복x, value 중복 o
