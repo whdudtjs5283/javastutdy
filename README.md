@@ -1,7 +1,6 @@
 ### javastutdy
 
-<h3>2022. 8. 4.</h3>
-
+<h2>2022. 8. 4.</h2>
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
 
