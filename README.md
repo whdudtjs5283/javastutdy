@@ -1,6 +1,5 @@
 ### javastutdy
------
-
+<h1>headline</h1>
 2022\. 8\. 4\.
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
@@ -20,8 +19,7 @@
    - Repository
    - Service
 </details>
-
------
+<h1>headline</h1>
 2022\. 8\. 3\.
 <details>
 <summary>java: 객체지향언어</summary>
