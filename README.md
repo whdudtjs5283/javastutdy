@@ -1,6 +1,6 @@
 ### javastutdy
 
-<h2>2022. 8. 4.</h2>
+<h3>2022. 8. 4.</h3>
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
 
@@ -20,7 +20,7 @@
    - Service
 </details>
 
-<h2>2022. 8. 3.</h2>
+<h3>2022. 8. 3.</h3>
 <details>
 <summary>java: 객체지향언어</summary>
 
