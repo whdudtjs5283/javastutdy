@@ -1,5 +1,26 @@
 ### javastutdy
 -----
+
+2022\. 8\. 4\.
+<details>
+<summary>비즈니스 CURD 로직 개발 순서</summary>
+
+   - 게시판
+      - 저장
+      - 조회(전체, 단건)
+      - 수정
+      - 삭제
+</details>
+<details>
+<summary>어플리케이션  개발 순서</summary>
+
+   - Controller
+   - DB
+   - Query
+   - Repository
+   - Service
+</details>
+-----
 2022\. 8\. 3\.
 <details>
 <summary>java: 객체지향언어</summary>
