@@ -1,6 +1,6 @@
 ### javastutdy
 
-<h2>2022. 8. 4.</h2>
+## 2022. 8. 4.
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
 
@@ -19,8 +19,35 @@
    - Repository
    - Service
 </details>
+<details>
+<summary>null check 방식</summary>
 
-<h3>2022. 8. 3.</h3>
+   - ObjectUtils
+   - CollectionUtils
+   - Optional
+</details>
+<details>
+<summary>I/O null check 필수</summary>
+
+   - validation
+      - requried check
+      - null check
+</details>
+<details>
+<summary>의존성 주입 : DI</summary>
+
+   - Authwired 사용x
+   - 생성자 주입 방식
+</details>
+<details>
+<details>
+<summary>영속성 프레임워크</summary>
+
+   - ORM : jpa
+   - Persitence : mybatis
+</details>
+
+## 2022. 8. 3.
 
 <details>
 <summary>java: 객체지향언어</summary>
