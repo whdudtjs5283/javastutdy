@@ -1,6 +1,6 @@
 ### javastutdy
 
-## 2022. 8. 4.
+## 2022. 8. 4
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
 
@@ -40,7 +40,6 @@
    - 생성자 주입 방식
 </details>
 <details>
-<details>
 <summary>영속성 프레임워크</summary>
 
    - ORM : jpa
@@ -48,7 +47,6 @@
 </details>
 
 ## 2022. 8. 3.
-
 <details>
 <summary>java: 객체지향언어</summary>
 
@@ -105,7 +103,7 @@
          - cloud : 3tier를 대여(?)해줌
             * NCP
 
-client <-> WEB
+- client <-> WEB
    - http, SSL, https
       - http : header, body
          - hedaer : 요청 정보
