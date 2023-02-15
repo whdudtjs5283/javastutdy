@@ -1,5 +1,14 @@
 ### javastutdy
 
+## 2022. 8. 8
+<details>
+<summary>VO, DTO, ENTITY</summary>
+
+  - VO : value object
+  - DTO : data transfer object
+  - entity : DB 다이렉트 (table)
+</details>
+
 ## 2022. 8. 4
 <details>
 <summary>비즈니스 CURD 로직 개발 순서</summary>
