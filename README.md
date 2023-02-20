@@ -1,5 +1,36 @@
 ### javastutdy
 
+## 2022. 8. 10
+<details>
+<summary>javascript 선언</summary>
+
+   - var : 어느 위치에 있든 찾을 수 있음
+   - let : function 내에서만 사용가능
+
+   - 스크립트 내 패키지 선언
+   var com = {
+       project : {
+           name : {
+               common : {}
+           }
+       }
+   };
+</details>
+
+<details>
+<summary>페이지가 그려질 때</summary>
+
+   - SSR / CSR
+     - SSR(SERVER SIDE RANDERING) : JSP
+     - CSR : react, vue
+</details>
+
+<details>
+<summary>이벤트 리스터 뒤에 .으로 id 지정 가능</summary>
+
+   - ex) jQuery("#btnAddName").off("click.add").on("click.add", function(){}
+</details>
+
 ## 2022. 8. 8
 <details>
 <summary>VO, DTO, ENTITY</summary>
